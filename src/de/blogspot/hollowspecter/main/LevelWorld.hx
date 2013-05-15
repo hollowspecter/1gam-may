@@ -21,13 +21,13 @@ class LevelWorld extends com.haxepunk.World
 	public override function begin()
 	{
 		testMarble1 = new Marble(300, 300, Marble.Color.RED);
-		//testMarble2 = new Marble(300, 350, Marble.Color.GREEN);
-		//testMarble3 = new Marble(350, 300, Marble.Color.BLUE);
-		//testMarble4 = new Marble(350, 350, Marble.Color.GOLD);
+		testMarble2 = new Marble(300, 350, Marble.Color.GREEN);
+		testMarble3 = new Marble(350, 300, Marble.Color.BLUE);
+		testMarble4 = new Marble(350, 350, Marble.Color.GOLD);
 		add(testMarble1);
-		//add(testMarble2);
-		//add(testMarble3);
-		//add(testMarble4);
+		add(testMarble2);
+		add(testMarble3);
+		add(testMarble4);
 	}
 	
 	public override function update()

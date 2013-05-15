@@ -167,6 +167,11 @@ class ApplicationMain {
             return Assets.getBitmapData ("gfx/debug/console_step.png");
          
 		
+		if (inName=="gfx/marbles.png")
+			 
+            return Assets.getBitmapData ("gfx/marbles.png");
+         
+		
 		if (inName=="font/04B_03__.ttf")
 			 
 			 return Assets.getFont ("font/04B_03__.ttf");
@@ -205,6 +210,7 @@ class NME_gfx_debug_console_output_png1 extends nme.display.BitmapData { public 
 class NME_gfx_debug_console_pause_png1 extends nme.display.BitmapData { public function new () { super (0, 0); } }
 class NME_gfx_debug_console_play_png1 extends nme.display.BitmapData { public function new () { super (0, 0); } }
 class NME_gfx_debug_console_step_png1 extends nme.display.BitmapData { public function new () { super (0, 0); } }
+class NME_gfx_marbles_png extends nme.display.BitmapData { public function new () { super (0, 0); } }
 class NME_font_5 extends nme.text.Font { }
 
 

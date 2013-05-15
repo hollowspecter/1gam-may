@@ -21,9 +21,6 @@ class Marble extends Entity
 	private var color_ : Color;
 	private var sprite : Spritemap;
 	
-	//image handling for every instance that uses the marble image
-	private static var spriteImage : Image;	
-	
 	/**
 	 * A new Marble
 	 * @param	posX The x position
@@ -33,8 +30,6 @@ class Marble extends Entity
 	public function new(posX:Float, posY:Float, color:Color) 
 	{
 		super();
-		if (spriteImage == null)
-			spriteImage = new Image("res/marbles.png");
 		
 		//position sprite correctly
 		x = posX;
@@ -45,7 +40,7 @@ class Marble extends Entity
 		color_ = color;
 		
 		//Sprite and Image handling
-		sprite = new Spritemap(spriteImage, Constants.MARBLEWID, Constants.MARBLEWID);
+		sprite = new Spritemap ("gfx/marbles.png", Constants.MARBLEWID, Constants.MARBLEWID);
 		sprite.add("marble", [toInt(color_)]);
 		graphic = sprite;
 		sprite.play("marble", false);

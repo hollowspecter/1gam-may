@@ -69,6 +69,8 @@ class Assets {
 			resourceTypes.set ("gfx/debug/console_play.png", "image");
 			resourceClasses.set ("gfx/debug/console_step.png", NME_gfx_debug_console_step_png1);
 			resourceTypes.set ("gfx/debug/console_step.png", "image");
+			resourceClasses.set ("gfx/marbles.png", NME_gfx_marbles_png);
+			resourceTypes.set ("gfx/marbles.png", "image");
 			resourceClasses.set ("font/04B_03__.ttf", NME_font_5);
 			resourceTypes.set ("font/04B_03__.ttf", "font");
 			
